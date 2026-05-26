@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
+import { SubscribeService } from '../Services/subscribe.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  providers: [SubscribeService]
 })
 export class HeaderComponent {
 
   selctedTab: string = 'home';
-  
+
   onHomeClick() {
     console.log('Home clicked');
   }
@@ -17,12 +19,14 @@ export class HeaderComponent {
     console.log('Admin clicked');
   }
 
+
+  constructor(private subService: SubscribeService) {
+
+  }
   onSubscribe() {
-    console.log('Subscribe clicked');
-    //add user to db
-    //send email with subscription details
-    //access service for user
-    alert('Subscribed successfully!');
+    // let subService = new SubscribeService();
+
+    this.subService.OnSubscribeClicked('Today');
   }
 
 }
