@@ -1,0 +1,13 @@
+<p>header works!</p>
+<div class="header-container">
+    <div class="header-logo" >My App</div>
+    <div class="header-nav">
+        <a href="#" (click)="onHomeClick()">Home</a>
+        <a href="#" (click)="onAdminClick()">Admin</a>
+        <button class="header-button" (click)="onSubscribe()">SUBSCRIBE</button>
+    </div>
+</div>
+<div [ngSwitch]="selctedTab">
+    <app-home *ngSwitchCase="'home'"></app-home>
+    <app-admin *ngSwitchCase="'admin'"></app-admin>
+</div>

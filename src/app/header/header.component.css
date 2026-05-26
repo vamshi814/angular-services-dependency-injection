@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 20px;
+    background-color: #7e71a0;
+    color: black;
+    font: bold 24px sans-serif;
+}
+
+.header-nav{
+    display: flex;
+    gap: 15px;
+}
+.header-nav a {
+    color: rgb(75, 3, 3);
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-button {
+    background-color: #2e0cec;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 16px;
+}
