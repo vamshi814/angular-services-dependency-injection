@@ -6,7 +6,7 @@ import { SubscribeService } from "src/app/Services/subscribe.service";
     selector: "app-hero",
     templateUrl: "./hero.component.html",
     styleUrls: ["./hero.component.css"],
-    providers: [SubscribeService]
+    
 })
 
 
