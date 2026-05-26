@@ -7,7 +7,7 @@
         <button class="header-button" (click)="onSubscribe()">SUBSCRIBE</button>
     </div>
 </div>
-<div [ngSwitch]="selctedTab">
+<div [ngSwitch]="selectedTab">
     <app-home *ngSwitchCase="'home'"></app-home>
     <app-admin *ngSwitchCase="'admin'"></app-admin>
 </div>

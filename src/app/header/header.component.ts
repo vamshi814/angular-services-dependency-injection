@@ -1,21 +1,25 @@
 import { Component } from '@angular/core';
 import { SubscribeService } from '../Services/subscribe.service';
+import { AdminComponent } from './admin/admin.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
   
+  
 })
 export class HeaderComponent {
 
-  selctedTab: string = 'home';
+  selectedTab: string = 'admin';
 
   onHomeClick() {
+    this.selectedTab = 'home';
     console.log('Home clicked');
   }
 
   onAdminClick() {
+    this.selectedTab = 'admin';
     console.log('Admin clicked');
   }
 
