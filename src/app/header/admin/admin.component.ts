@@ -19,7 +19,8 @@ export class AdminComponent {
     }
     CreateNewUser() {
       this.userService.CreateUser(this.name, this.gender, this.subType, this.status);
-      console.log(this.userService.GetAllUsers());
+      // console.log(this.userService.GetAllUsers());
+      
     }
 
 }
