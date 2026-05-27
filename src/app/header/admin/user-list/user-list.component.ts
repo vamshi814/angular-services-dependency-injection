@@ -1,4 +1,5 @@
 import { Component, Inject } from "@angular/core";
+import { USER_TOKEN } from "src/app/app.module";
 import { UserService } from "src/app/Services/user.service";
 
 
@@ -9,7 +10,7 @@ import { UserService } from "src/app/Services/user.service";
 })  
 
 export class UserListComponent {
-    constructor(private userService: UserService) {
+    constructor(@Inject(USER_TOKEN) private userService: UserService) {
 
     }
 

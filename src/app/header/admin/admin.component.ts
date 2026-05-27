@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Inject } from "@angular/core";
+import { USER_TOKEN } from "src/app/app.module";
 import { UserService } from "src/app/Services/user.service";
 
 
@@ -14,7 +15,7 @@ export class AdminComponent {
     subType: string = 'Yearly';
     status: string = 'Active';
 
-    constructor(private userService: UserService) { 
+    constructor(@Inject(USER_TOKEN) private userService: UserService) { 
 
     }
     CreateNewUser() {
