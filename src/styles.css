@@ -45,9 +45,9 @@ select{
 }
 .admin-user-detail{
     display: flex;
-    width: 70%;
+    width: 60%;
     margin: auto;
-    padding: 15px 20px;
+    padding: 15px 15px;
     background-color: #28282B;
     color: white;
     border-bottom: #1D8348 3px solid;
@@ -55,17 +55,17 @@ select{
     font-weight: lighter;
 }
 .admin-user-name{
-    width: 40%;
+    width: 30%;
 }
 .admin-user-gender{
     width: 20%;
 }
 .admin-user-subtype{
-    padding: auto;
+    width: 20%;
+    
 }
-.admin-user-active{
-    padding: auto;
-    margin-left: 10px;
+.admin-user-status{
+    width: 30%;
 }
 .admin-user-show-detail-button{
     padding: 2px 5px;

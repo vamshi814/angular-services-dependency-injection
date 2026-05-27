@@ -3,9 +3,17 @@
         <div class="admin-user-name">{{ user.name }}</div>
         
         <div class="admin-user-gender">{{ user.gender }}</div>
-        <div class="admin-user-subType">{{ user.subType }}----</div>
+        <div class="admin-user-subType">{{ user.subType }}</div>
         
         <div class="admin-user-status">{{ user.status }}</div>
-        <!-- <button class="admin-user-show-detail-button" >+</button> -->
+        <button class="admin-user-show-detail-button" (click)="ShowUserDetails(user)">+</button>
     </div>
+<!--   static data for testing  
+    <div *ngIf="showDetails">
+        <app-user-details></app-user-details>
+    </div> 
+-->
+    <!-- <div>
+        <app-user-details></app-user-details>
+    </div> -->
 </div>

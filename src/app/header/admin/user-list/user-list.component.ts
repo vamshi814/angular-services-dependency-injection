@@ -1,5 +1,6 @@
 import { Component, Inject } from "@angular/core";
 import { USER_TOKEN } from "src/app/app.module";
+import { User } from "src/app/Models/User";
 import { UserService } from "src/app/Services/user.service";
 
 
@@ -15,4 +16,12 @@ export class UserListComponent {
     }
 
     userList = this.userService.GetAllUsers();
+
+    //showDetails: boolean = false;
+
+    ShowUserDetails(user: User) {
+        // alert("User Details");
+        //this.showDetails = !this.showDetails;
+        this.userService.OnShowUserDetails(user);
+    }
 }
